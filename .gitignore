@@ -17,3 +17,4 @@
 *.Cache
 bin
 obj
+_ReSharper*

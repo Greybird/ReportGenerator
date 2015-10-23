@@ -107,7 +107,7 @@ namespace Palmmedia.ReportGenerator.Parser
                     Logger.Debug(" " + Resources.PreprocessingReport);
                     new OpenCoverReportPreprocessor(item, classSearcherFactory, globalClassSearcher).Execute();
                     Logger.DebugFormat(" " + Resources.InitiatingParser, "OpenCover");
-                    parsers.Add(new OpenCoverParser(item));
+                    parsers.Add(new OpenCoverXOneParser(item));
                 }
             }
             else if (report.Descendants("coverage").Any())
